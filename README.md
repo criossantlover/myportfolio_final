@@ -1,1 +1,67 @@
-# myportfolio_final-project
+# Kent Joshua — Personal Portfolio Website
+
+A personal portfolio website built with **HTML**, **CSS**, and **JavaScript**, deployed via **GitHub Pages**.
+
+---
+
+## Live Demo
+
+- **Portfolio (GitHub Pages):** `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`
+- **GitHub Repository:** `https://github.com/YOUR-USERNAME/YOUR-REPO-NAME`
+
+> Replace `YOUR-USERNAME` and `YOUR-REPO-NAME` with your actual GitHub username and repository name after deploying.
+
+---
+
+## Project Structure
+
+```
+portfolio/
+├── index.html       # Main HTML structure
+├── style.css        # All styles, animations, and responsive layout
+├── script.js        # Scroll reveal, mobile menu, dynamic footer year
+├── portfolio.png    # Your profile photo
+└── README.md        # This file
+```
+
+---
+
+## Features
+
+- Responsive design (mobile, tablet, desktop)
+- Smooth scroll-reveal animations using IntersectionObserver
+- Ken Burns photo animation on hero section
+- Sticky frosted-glass navigation bar
+- Mobile hamburger menu
+- Tech stack showcase with hover effects
+- Projects, experience, and contact sections
+
+---
+
+## How to Run Locally
+
+1. Download or clone this repository
+2. Open `index.html` directly in your browser
+
+No build tools, no npm, no installs required — it's plain HTML/CSS/JS.
+
+---
+
+## Deployment (GitHub Pages)
+
+See `DEPLOYMENT_GUIDE.md` for the full step-by-step instructions.
+
+---
+
+## Built With
+
+- HTML5
+- CSS3 (Grid, Flexbox, CSS Variables, Keyframe Animations)
+- Vanilla JavaScript (IntersectionObserver API)
+- Google Fonts — Playfair Display & DM Sans
+
+---
+
+## License
+
+This project is for educational/personal use as part of a final project requirement.
