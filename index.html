@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kent Joshua — IT Student & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md fixed-top kc-navbar">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand kc-brand" href="#">KENCHAN</a>
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <!-- Dark mode toggle -->
+        <button class="kc-theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-fill" id="themeIcon"></i>
+        </button>
+        <button class="navbar-toggler kc-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-md-4">
+          <li class="nav-item"><a class="nav-link kc-nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link kc-nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link kc-nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link kc-nav-link" href="#experience">Experience</a></li>
+        </ul>
+        <a href="#contact" class="btn kc-btn-outline-dark mt-3 mt-md-0">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="kc-hero">
+    <div class="kc-hero__photo">
+      <img src="portfolio.png" alt="Kent Joshua" class="kc-hero__img" />
+      <div class="kc-hero__tint"></div>
+      <div class="kc-hero__overlay"></div>
+      <span class="kc-hero__side-label">Full Stack · Developer</span>
+    </div>
+    <div class="kc-hero__text">
+      <div class="kc-hero__stats fade-up" style="--delay:.1s">
+        <div>
+          <p class="kc-stat-num">100+</p>
+          <p class="kc-stat-chip">Projects built</p>
+        </div>
+        <div>
+          <p class="kc-stat-num">3rd</p>
+          <p class="kc-stat-chip">Year IT student</p>
+        </div>
+      </div>
+      <div class="fade-up" style="--delay:.25s">
+        <h1 class="kc-hero__hello">Hello,</h1>
+        <h1 class="kc-hero__hello kc-hero__hello--muted">I'm Kent.</h1>
+      </div>
+      <p class="kc-hero__desc fade-up" style="--delay:.4s">
+      AI \ Game Developer \ Multimedia Creator
+      </p>
+      <div class="mt-5 fade-up" style="--delay:.55s">
+        <a href="#about" class="kc-scroll-hint">
+          <i class="bi bi-arrow-down kc-bounce"></i>
+          <span>Scroll down</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="kc-section">
+    <div class="container-fluid px-4">
+      <div class="kc-card reveal">
+        <span class="kc-label">About Me</span>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <p class="kc-body-text">
+              I'm a 3rd-year IT student who genuinely enjoys building things. I started teaching myself how to code in 2023 and haven't stopped since — picking up new tools, breaking things, and figuring out how to fix them.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p class="kc-body-text">
+              I've worked on a range of school and personal projects — from basic web apps to more complex systems involving databases, APIs, and automation. I care about writing clean, readable code that actually works.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p class="kc-body-text">
+              Right now I'm focused on improving my full-stack skills and exploring areas like AI integration and system design. I'm open to internships, freelance work, or any opportunity to grow as a developer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS: Tech Stack + Soft Skills -->
+  <section id="skills" class="kc-section">
+    <div class="container-fluid px-4">
+
+      <!-- Tech Stack -->
+      <div class="kc-card reveal mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <span class="kc-label mb-0">Tech Stack</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <p class="kc-skill-cat">Frontend</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="kc-badge">JavaScript</span>
+              <span class="kc-badge">TypeScript</span>
+              <span class="kc-badge">React</span>
+              <span class="kc-badge">Next.js</span>
+              <span class="kc-badge">Tailwind CSS</span>
+              <span class="kc-badge">Bootstrap</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="kc-skill-cat">Backend</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="kc-badge">Node.js</span>
+              <span class="kc-badge">Python</span>
+              <span class="kc-badge">PHP</span>
+              <span class="kc-badge">Laravel</span>
+              <span class="kc-badge">PostgreSQL</span>
+              <span class="kc-badge">MongoDB</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="kc-skill-cat">DevOps &amp; Cloud</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="kc-badge">AWS</span>
+              <span class="kc-badge">Docker</span>
+              <span class="kc-badge">Kubernetes</span>
+              <span class="kc-badge">GitHub Actions</span>
+              <span class="kc-badge">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="kc-card reveal">
+        <span class="kc-label mb-4">Soft Skills</span>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="kc-badge kc-badge--soft">Communication</span>
+          <span class="kc-badge kc-badge--soft">Teamwork &amp; Collaboration</span>
+          <span class="kc-badge kc-badge--soft">Problem-Solving</span>
+          <span class="kc-badge kc-badge--soft">Adaptability &amp; Flexibility</span>
+          <span class="kc-badge kc-badge--soft">Emotional Intelligence</span>
+          <span class="kc-badge kc-badge--soft">Leadership</span>
+          <span class="kc-badge kc-badge--soft">Work Ethic</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS — horizontal scroll cards with real images -->
+  <section id="projects" class="kc-section">
+    <div class="container-fluid px-4">
+      <div class="kc-card reveal" style="padding-bottom: 1.5rem;">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <span class="kc-label mb-0">Projects</span>
+          <span class="kc-scroll-indicator"><i class="bi bi-arrow-left-right me-1"></i>Scroll</span>
+        </div>
+
+        <div class="kc-proj-scroll">
+
+          <!-- Project 1: Barangay E-Serbisyo -->
+          <div class="kc-proj-card">
+            <div class="kc-proj-card__img">
+              <img src="project1.png" alt="Barangay E-Serbisyo" />
+            </div>
+            <div class="kc-proj-card__body">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <p class="kc-proj-card__title">Barangay E-Serbisyo</p>
+              </div>
+              <div class="kc-proj-card__tags">
+                <span class="kc-proj-tag">PHP</span>
+                <span class="kc-proj-tag">Laravel</span>
+                <span class="kc-proj-tag">MySQL</span>
+              </div>
+              <p class="kc-proj-card__desc">
+                A full-stack web system for Barangay Poblacion Dos, Bansalan. Residents can
+                request certificates online and barangay staff can manage resident records,
+                track requests, and issue official documents — all through a single portal.
+              </p>
+              <a href="#" class="kc-proj-card__link">View Project <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 2: Hopia Special — Multimedia / Graphic Design -->
+          <div class="kc-proj-card">
+            <div class="kc-proj-card__img">
+              <img src="project2.jpg" alt="Hopia Special — Multimedia Project" />
+            </div>
+            <div class="kc-proj-card__body">
+              <p class="kc-proj-card__title">Hopia Special</p>
+              <div class="kc-proj-card__tags">
+                <span class="kc-proj-tag">Graphic Design</span>
+                <span class="kc-proj-tag">Multimedia</span>
+                <span class="kc-proj-tag">Photoshop</span>
+              </div>
+              <p class="kc-proj-card__desc">
+                A creative multimedia output made for an ambassador graphic design project.
+                Combines photo manipulation, typographic layout, and visual storytelling
+                to produce an eye-catching promotional poster concept.
+              </p>
+              <a href="#" class="kc-proj-card__link">View Project <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 3: Where The Lies Begins — Film Poster -->
+          <div class="kc-proj-card">
+            <div class="kc-proj-card__img">
+              <img src="project3.jpg" alt="Where The Lies Begins — Film Poster" />
+            </div>
+            <div class="kc-proj-card__body">
+              <p class="kc-proj-card__title">Where The Lies Begins</p>
+              <div class="kc-proj-card__tags">
+                <span class="kc-proj-tag">Film</span>
+                <span class="kc-proj-tag">Poster Design</span>
+                <span class="kc-proj-tag">Photo Editing</span>
+              </div>
+              <p class="kc-proj-card__desc">
+                Official film poster for a short film I directed. Handled the full visual
+                identity — photo compositing, typography, color grading, and print-ready
+                layout. The film explores secrets and deception in a school setting.
+              </p>
+              <a href="#" class="kc-proj-card__link">View Project <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 4: PUGON — Horror Game -->
+          <div class="kc-proj-card">
+            <div class="kc-proj-card__img">
+              <img src="project4.png" alt="PUGON — Horror Game" />
+            </div>
+            <div class="kc-proj-card__body">
+              <p class="kc-proj-card__title">PUGON</p>
+              <div class="kc-proj-card__tags">
+                <span class="kc-proj-tag">Godot Engine</span>
+                <span class="kc-proj-tag">Game Dev</span>
+                <span class="kc-proj-tag">3D Assets</span>
+              </div>
+              <p class="kc-proj-card__desc">
+                A 3D horror game I built two years ago using the Godot Engine. Every asset —
+                environments, props, lighting — was created from scratch inside Godot. A solo
+                project that pushed me to learn game logic, scene management, and 3D design
+                at the same time.
+              </p>
+              <a href="#" class="kc-proj-card__link">View Project <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 5: Pixel Portfolio — video card -->
+          <div class="kc-proj-card">
+            <div class="kc-proj-card__video">
+              <video src="video1.mp4" muted loop playsinline
+                     class="kc-proj-card__vid-el"
+                     onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0">
+              </video>
+              <div class="kc-proj-card__vid-overlay">
+                <i class="bi bi-play-circle-fill kc-proj-card__play-icon"></i>
+                <span class="kc-proj-card__vid-label">Hover to preview</span>
+              </div>
+            </div>
+            <div class="kc-proj-card__body">
+              <p class="kc-proj-card__title">Pixel Portfolio</p>
+              <div class="kc-proj-card__tags">
+                <span class="kc-proj-tag">HTML</span>
+                <span class="kc-proj-tag">CSS</span>
+                <span class="kc-proj-tag">JavaScript</span>
+                <span class="kc-proj-tag">Pixel Art</span>
+              </div>
+              <p class="kc-proj-card__desc">
+                My first personal portfolio — built with a retro pixel art aesthetic inspired
+                by classic desktop UIs. Features pixel-styled icons, a Windows XP-like
+                interface, and hand-crafted pixel art backgrounds. A fun creative project
+                that blends frontend development with digital art.
+              </p>
+              <a href="#" class="kc-proj-card__link">View Project <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 6: HILOM — Mystery Film Trailer -->
+          <div class="kc-proj-card">
+            <div class="kc-proj-card__video">
+              <video src="video2.mp4" muted loop playsinline
+                     class="kc-proj-card__vid-el"
+                     onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0">
+              </video>
+              <div class="kc-proj-card__vid-overlay">
+                <i class="bi bi-play-circle-fill kc-proj-card__play-icon"></i>
+                <span class="kc-proj-card__vid-label">Hover to preview</span>
+              </div>
+            </div>
+            <div class="kc-proj-card__body">
+              <p class="kc-proj-card__title">HILOM — Film Trailer</p>
+              <div class="kc-proj-card__tags">
+                <span class="kc-proj-tag">Film</span>
+                <span class="kc-proj-tag">Video Editing</span>
+                <span class="kc-proj-tag">Mystery</span>
+              </div>
+              <p class="kc-proj-card__desc">
+                Official trailer for HILOM, a mystery short film I created and edited.
+                The trailer is crafted to build tension and intrigue — combining
+                cinematic cuts, sound design, and visual pacing to draw viewers into
+                the story. Showcases skills in video production, storytelling, and
+                post-production editing.
+              </p>
+              <a href="#" class="kc-proj-card__link">View Project <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+        </div><!-- end kc-proj-scroll -->
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="kc-section">
+    <div class="container-fluid px-4">
+      <div class="kc-card reveal">
+        <span class="kc-label">Experience</span>
+
+        <div class="kc-exp-row">
+          <div>
+            <p class="kc-exp-role">3rd Year IT Student</p>
+            <p class="kc-exp-company">University — Multiple project experience in web dev, databases &amp; systems</p>
+          </div>
+          <span class="kc-exp-year">2026</span>
+        </div>
+
+        <div class="kc-exp-row">
+          <div>
+            <p class="kc-exp-role">2nd Year IT Student</p>
+            <p class="kc-exp-company">University — Built first real projects, learned frameworks &amp; collaboration</p>
+          </div>
+          <span class="kc-exp-year">2025</span>
+        </div>
+
+        <div class="kc-exp-row">
+          <div>
+            <p class="kc-exp-role">1st Year IT Student</p>
+            <p class="kc-exp-company">University — Started formal CS education, applied self-taught foundations</p>
+          </div>
+          <span class="kc-exp-year">2024</span>
+        </div>
+
+        <div class="kc-exp-row">
+          <div>
+            <p class="kc-exp-role">Self-Taught Developer</p>
+            <p class="kc-exp-company">Independent — Learned HTML, CSS, JavaScript &amp; basic back-end from scratch</p>
+          </div>
+          <span class="kc-exp-year">2023</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="kc-section">
+    <div class="container-fluid px-4">
+      <div class="kc-card kc-card--dark kc-contact-box reveal">
+        <div class="row align-items-center g-5">
+          <div class="col-md-7">
+            <span class="kc-label kc-label--dark">Contact</span>
+            <h2 class="kc-contact-heading">Let's work<br />together.</h2>
+            <p class="kc-contact-sub">Open to internships, freelance projects, and collaborations.<br />Drop me a message anytime.</p>
+          </div>
+          <div class="col-md-5 d-flex flex-column gap-3">
+            <!-- Replace with your real email -->
+            <a href="mailto:hello@kentjoshua.dev" class="btn kc-btn-light w-100">
+              <i class="bi bi-envelope me-2"></i>Send Email
+            </a>
+            <!-- Replace # with your real GitHub URL -->
+            <a href="#" class="btn kc-btn-ghost w-100">
+              <i class="bi bi-github me-2"></i>GitHub
+            </a>
+            <!-- Replace # with your real LinkedIn URL -->
+            <a href="#" class="btn kc-btn-ghost w-100">
+              <i class="bi bi-linkedin me-2"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer class="kc-footer text-center">
+  <div class="container-fluid px-4">
+    <span class="kc-footer-txt">© <span id="year"></span> Kent Joshua</span>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
